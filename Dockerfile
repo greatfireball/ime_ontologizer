@@ -13,7 +13,8 @@ RUN apt update && \
 	--yes \
 	--no-install-recommends \
 	graphviz \
-	openjdk-7-jre-headless
+	openjdk-7-jre-headless \
+	wget
 
 
 VOLUME /data
