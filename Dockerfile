@@ -23,3 +23,6 @@ RUN wget -O Ontologizer.jar \
 
 VOLUME /data
 WORKDIR /data
+
+ENTRYPOINT ["java", "-jar",  "/ontologizer/Ontologizer.jar"]
+CMD ["--version"]
