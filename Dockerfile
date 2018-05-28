@@ -8,5 +8,11 @@ LABEL maintainer="frank.foerster@ime.fraunhofer.de" \
       org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.vcs-url="https://github.com/greatfireball/ime_ontologizer"
 
+RUN apt update && \
+    apt install \
+	--yes \
+	--no-install-recommends \
+	graphviz
+
 VOLUME /data
 WORKDIR /data
