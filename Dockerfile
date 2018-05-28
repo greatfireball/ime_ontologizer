@@ -12,7 +12,9 @@ RUN apt update && \
     apt install \
 	--yes \
 	--no-install-recommends \
-	graphviz
+	graphviz \
+	openjdk-7-jre-headless
+
 
 VOLUME /data
 WORKDIR /data
