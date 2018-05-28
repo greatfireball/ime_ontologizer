@@ -16,6 +16,10 @@ RUN apt update && \
 	openjdk-7-jre-headless \
 	wget
 
+WORKDIR /ontologizer
+
+RUN wget -O Ontologizer.jar \
+    http://ontologizer.de/cmdline/Ontologizer.jar
 
 VOLUME /data
 WORKDIR /data
