@@ -20,7 +20,8 @@ RUN apt update && \
 	--no-install-recommends \
 	graphviz \
 	openjdk-8-jre-headless \
-	wget
+	wget && \
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /ontologizer
 
