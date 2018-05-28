@@ -7,3 +7,6 @@ LABEL maintainer="frank.foerster@ime.fraunhofer.de" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.vcs-url="https://github.com/greatfireball/ime_ontologizer"
+
+VOLUME /data
+WORKDIR /data
